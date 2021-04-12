@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=”en”>
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,7 +82,7 @@
                         facere illum, assumenda eius natus harum distinctio autem!
                         voluptatem in ex, fuga perspiciatis dignissimos pariatur enim sit sequi et explicabo eligendi recusandae?
                     </p>
-                    <label for="song">I heard this song the other day:</label>
+                    <label>I heard this song the other day:</label>
                     <br>
                     <audio controls src="audio/classic.mp3" id="song"></audio>
                 </section>
@@ -118,9 +118,9 @@
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem corporis tempora error at. Saepe quidem voluptatibus tenetur dicta sit ex nobis doloribus
                         facere illum, assumenda eius natus harum distinctio autem!
                     </p>
-                    <label for="video">Here's a stock video I saw today:</label>
+                    <label>Here's a stock video I saw today:</label>
                     <br>
-                    <video controls width="300"src="videos/sample.mov" type="video/mov"id="video"></video>
+                    <video controls width="300"src="videos/sample.mov" type="video/mov" id="video"></video>
                 </section>
                 <hr>
             </div>
@@ -133,26 +133,26 @@
                 as you like. If you don't have any images to add, try searching on <a href="https://images.google.com/?gws_rd=ssl">Google Images</a>,
                 and take a look on <a href="https://www.youtube.com">Youtube</a> if you need to find videos.
             </p>
-            <form action="">
+            <form action="POST">
                 <label for="Entry">Start writing below!</label>
                 <br>
                 <fieldset>
                     <textarea name="Entry" id="Entry" cols="100" rows="10"></textarea>
                     <br>
-                    <input type="radio" id="Option 1">
-                    <label for="Option 1">Option 1</label>
-                    <input type="radio" id="Option 2">
-                    <label for="Option 2">Option 2</label>
+                    <input type="radio" id="Option-1">
+                    <label for="Option-1">Option-1</label>
+                    <input type="radio" id="Option-2">
+                    <label for="Option-2">Option-2</label>
                     <br>
                     <br>
-                    <input type="checkbox" id="Checkbox 1">
-                    <label for="Checkbox 1">Check 1</label>
-                    <input type="checkbox" id="Checkbox 2">
-                    <label for="Checkbox 2">Check 2</label>
+                    <input type="checkbox" id="Checkbox-1">
+                    <label for="Checkbox-1">Check 1</label>
+                    <input type="checkbox" id="Checkbox-2">
+                    <label for="Checkbox-2">Check 2</label>
                     <br>
                     <br>
                     <label for="date-box">Enter date</label>
-                    <input type="date" id="date-box" value="04/11/2021">
+                    <input type="date" id="date-box" placeholder="04/11/2021">
                     <br>
                     <br>
                     <label for="mood-choice">How are you feeling?</label>

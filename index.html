@@ -116,13 +116,16 @@
                 </div>
             </div>
 
-            <div>
-                <section>
+            <div class="grid-container-two">
+                <div class="grid-item grid-title2">
                     <h2>A Day of Relaxation</h2>
                     <span>
                         <small>Added 3 days ago</small>
                     </span>
                     <br>
+                </div>
+                
+                <div class="grid-item grid-highlights-todo2">
                     <h3>Highlights and Lowlights</h3>
                     <ul>
                         <li>Talked to an old friend after a while again</li>
@@ -134,8 +137,10 @@
                         <li>Start CSE101 HW</li>
                         <li>Start CSE105 HW</li>
                         <li>Submit COGS108 Labs</li>
-                    </ol>
-                    
+                    </ol>    
+                </div>
+                
+                <div class="grid-item grid-thoughts-vid">
                     <h3>Just Some Thoughts</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nisi impedit itaque eius laborum ea fugit! Fuga rerum, vero inventore nihil, 
@@ -148,71 +153,75 @@
                     <label>Here's a stock video I saw today:</label>
                     <br>
                     <video controls width="300" src="videos/sample.mov" id="video"></video>
-                </section>
-                <hr>
+    
+                    <hr>
+                </div>
+                
             </div>
         </main>
         
-        <footer>
-            <h4>Add a new Entry</h4>
-            <p>
-                Use this to add another entry to your journal. You can add <i><b>as many</b></i> images, audio files, or videos up
-                as you like. If you don't have any images to add, try searching on <a href="https://images.google.com/?gws_rd=ssl">Google Images</a>,
-                and take a look on <a href="https://www.youtube.com">Youtube</a> if you need to find videos.
-            </p>
-            <form action="POST">
-                <label for="Entry">Start writing below!</label>
+        <div>
+            <footer>
+                <h4>Add a new Entry</h4>
+                <p>
+                    Use this to add another entry to your journal. You can add <i><b>as many</b></i> images, audio files, or videos up
+                    as you like. If you don't have any images to add, try searching on <a href="https://images.google.com/?gws_rd=ssl">Google Images</a>,
+                    and take a look on <a href="https://www.youtube.com">Youtube</a> if you need to find videos.
+                </p>
+                <form action="POST">
+                    <label for="Entry">Start writing below!</label>
+                    <br>
+                    <fieldset>
+                        <textarea name="Entry" id="Entry" cols="100" rows="10"></textarea>
+                        <br>
+                        <input type="radio" id="Option-1">
+                        <label for="Option-1">Option 1</label>
+                        <input type="radio" id="Option-2">
+                        <label for="Option-2">Option 2</label>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="Checkbox-1">
+                        <label for="Checkbox-1">Check 1</label>
+                        <input type="checkbox" id="Checkbox-2">
+                        <label for="Checkbox-2">Check 2</label>
+                        <br>
+                        <br>
+                        <label for="date-box">Enter date</label>
+                        <input type="date" id="date-box">
+                        <br>
+                        <br>
+                        <label for="mood-choice">How are you feeling?</label>
+                        <input list="moods" id="mood-choice" name="mood=choice">
+                        <datalist id="moods">
+                            <option value="Happy"></option>
+                            <option value="Relaxed"></option>
+                            <option value="Worried"></option>
+                            <option value="Sad"></option>
+                            <option value="Angry"></option>
+                        </datalist>
+                        <br>
+                        <br>
+                        <label for="weather-select">How was the weather?</label>
+                        <select name="weather" id="weather-select">
+                            <option value="">--Choose an option--</option>
+                            <option value="Sunny">Sunny</option>
+                            <option value="Cloudy">Cloudy</option>
+                            <option value="Windy">Windy</option>
+                            <option value="Rainy">Rainy</option>
+                            <option value="Stormy">Stormy</option>
+                        </select>
+                        <br>
+                        <br>
+                        <button>Submit Entry</button>
+                    </fieldset>
+                    
+                </form>
                 <br>
-                <fieldset>
-                    <textarea name="Entry" id="Entry" cols="100" rows="10"></textarea>
-                    <br>
-                    <input type="radio" id="Option-1">
-                    <label for="Option-1">Option 1</label>
-                    <input type="radio" id="Option-2">
-                    <label for="Option-2">Option 2</label>
-                    <br>
-                    <br>
-                    <input type="checkbox" id="Checkbox-1">
-                    <label for="Checkbox-1">Check 1</label>
-                    <input type="checkbox" id="Checkbox-2">
-                    <label for="Checkbox-2">Check 2</label>
-                    <br>
-                    <br>
-                    <label for="date-box">Enter date</label>
-                    <input type="date" id="date-box">
-                    <br>
-                    <br>
-                    <label for="mood-choice">How are you feeling?</label>
-                    <input list="moods" id="mood-choice" name="mood=choice">
-                    <datalist id="moods">
-                        <option value="Happy"></option>
-                        <option value="Relaxed"></option>
-                        <option value="Worried"></option>
-                        <option value="Sad"></option>
-                        <option value="Angry"></option>
-                    </datalist>
-                    <br>
-                    <br>
-                    <label for="weather-select">How was the weather?</label>
-                    <select name="weather" id="weather-select">
-                        <option value="">--Choose an option--</option>
-                        <option value="Sunny">Sunny</option>
-                        <option value="Cloudy">Cloudy</option>
-                        <option value="Windy">Windy</option>
-                        <option value="Rainy">Rainy</option>
-                        <option value="Stormy">Stormy</option>
-                    </select>
-                    <br>
-                    <br>
-                    <button>Submit Entry</button>
-                </fieldset>
-                
-            </form>
-            <br>
-            <details>
-                <summary>You've reached the end!</summary>
-                <p>Stay tuned, there will be more content coming soon!</p>
-              </details>
-        </footer>
+                <details>
+                    <summary>You've reached the end!</summary>
+                    <p>Stay tuned, there will be more content coming soon!</p>
+                  </details>
+            </footer>
+        </div>
     </body>
 </html>

@@ -33,6 +33,10 @@ li {
     font-size: 15px;
 }
 
+li li {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 11px;
+}
 /* Selectors */
 #cat-image:hover {
     border: 4px solid;
@@ -150,4 +154,8 @@ li {
 
 .grid-thoughts-vid {
     background-color: lightsalmon;
+}
+
+*.footer {
+    border: 1px solid;
 }

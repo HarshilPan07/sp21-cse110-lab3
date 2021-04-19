@@ -1,0 +1,97 @@
+/* Margins and Box Model */
+body {
+
+}
+h1 {
+    font-family: monospace;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+small {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: lightslategray;
+}
+
+label {
+    font-family: 'Quicksand', sans-serif;
+    font-style: italic;
+    font-size: 11px;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+li {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+}
+
+/* Selectors */
+#cat-image:hover {
+    border: 4px solid;
+    border-color: lightcoral;
+}
+
+/* Flexbox styling */
+
+.flexbox-nav {
+    display: flex;
+    background-color: lightblue;
+    justify-content: space-around;
+    padding: 10px 0px 10px 0px;
+}
+
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: linen;
+}
+
+.flexbox-item {
+    margin: 10px 20px 10px 20px;
+    background-color:lightsteelblue;
+    border: 2px solid;
+    border-color: slategrey;
+}
+
+.flexbox-entry1 {
+    display: flex;
+    align-items: baseline;
+    justify-content:space-around;
+}
+
+.flexbox-entry1-highlights-todo {
+    display: flex;
+    flex: 1 1 33.33%;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 0px 0px 25px;
+}
+
+.flexbox-entry1-thoughts-picture {
+    display: flex;
+    flex: 2 1 66.66%;
+    justify-content:space-evenly;
+    flex-direction: column;
+    padding: 0px 25px 5px 0px;
+}
+
+.nav-button {
+    background-color: lightgray;
+    border: 1px solid;
+}
+
+.nav-button:hover {
+    background-color: lightseagreen;
+}

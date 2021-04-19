@@ -3,52 +3,74 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/png" href="images/book.png">
-
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet"> 
+        
         <title>My Journal</title>
     </head>
     <body>
         <header>
             <h1>My Journal Entries <img src="images/leaf.png" alt="leaf" width="25"></h1>
-            <nav>
-                <hr>
-                    <span>Home About</span>
-                <hr>
+            <nav class="flexbox-nav">
+                <div>
+                    <button class="nav-button">Home</button>
+                </div>
+                
+                <div>
+                    <button class="nav-button">About</button>
+                </div>
             </nav>
         </header>
         
-        <main>
+        <main class="flexbox-container">
             <div>
                 <section>
-                    <h2>An Okay Day</h2>
-                    <span>
-                        <small>Added 1 day ago</small>
-                    </span>
-                    <br>
-                    <h3>Highlights and Lowlights</h3>
-                    <ul>
-                        <li>Quiz is coming up</li>
-                        <li>Had some fun with friends today</li>
-                        <li>Little worried about the new project starting in COGS108</li>
-                    </ul>
-                    <h3>Things for Today</h3>
-                    <ol>
-                        <li>Watch CSE101 Recap</li>
-                        <li>Watch CSE105 Discussion Recap</li>
-                        <li>Study for CSE101 Quiz</li>
-                    </ol>
+                    <div class="flexbox-item">
+                        <h2>An Okay Day</h2>
+                        <span>
+                            <small>Added 1 day ago</small>
+                        </span>
+                        <br>    
+                    </div>
+                    <div class="flexbox-item flexbox-entry1">
+                        <div class="flexbox-entry1-highlights-todo">
+                            <h3>Highlights and Lowlights</h3>
+                            <ul>
+                                <li>Quiz is coming up</li>
+                                <li>Had some fun with friends today</li>
+                                <li>Little worried about the new project starting in COGS108</li>
+                            </ul>
+                            <h3>Things for Today</h3>
+                            <ol>
+                                <li>Watch CSE101 Recap</li>
+                                <li>Watch CSE105 Discussion Recap</li>
+                                <li>Study for CSE101 Quiz</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="flexbox-entry1-thoughts-picture">
+                            <div>
+                                <h3>Just Some Thoughts</h3>
+                                <p> 
+                                    Lorem ipsum dolor sit amet <b>consectetur</b> adipisicing elit. Eum nisi impedit itaque eius laborum ea fugit! Fuga rerum, vero inventore nihil, 
+                                    repellendus voluptatem ratione aut dolores, dignissimos temporibus dolor officiis?
+                                    Lorem ipsum dolor, <strong>sit amet</strong> consectetur adipisicing elit. Placeat dolor perferendis blanditiis temporibus officia. Accusamus, laboriosam 
+                                    voluptatem in ex, fuga perspiciatis dignissimos pariatur enim sit sequi et explicabo eligendi recusandae?
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem corporis tempora error at. Saepe quidem voluptatibus tenetur dicta sit ex nobis doloribus
+                                    facere illum, assumenda eius natus harum distinctio autem!
+                                </p>
+                            </div>
+                            
+                            <div>
+                                <img src="images/cat.jpg" alt="image of leaf" id="cat-image" width="300">
+                                <label>Here's a picture of a cute cat I saw today.</label>
+                            </div>    
+                        </div>
+                    </div>
                     
-                    <h3>Just Some Thoughts</h3>
-                    <p> 
-                        Lorem ipsum dolor sit amet <b>consectetur</b> adipisicing elit. Eum nisi impedit itaque eius laborum ea fugit! Fuga rerum, vero inventore nihil, 
-                        repellendus voluptatem ratione aut dolores, dignissimos temporibus dolor officiis?
-                        Lorem ipsum dolor, <strong>sit amet</strong> consectetur adipisicing elit. Placeat dolor perferendis blanditiis temporibus officia. Accusamus, laboriosam 
-                        voluptatem in ex, fuga perspiciatis dignissimos pariatur enim sit sequi et explicabo eligendi recusandae?
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem corporis tempora error at. Saepe quidem voluptatibus tenetur dicta sit ex nobis doloribus
-                        facere illum, assumenda eius natus harum distinctio autem!
-                    </p>
-                    <img src="images/cat.jpg" alt="image of leaf" id="cat-image" width="300">
-                    <label>Here's a picture of a cute cat I saw today.</label>
                 </section>
                 <hr>
             </div>
